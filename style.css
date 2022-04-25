@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+body{
+    background-color: #22212C;
+    color: #837E9F;
+    font-family: Merriweather Sans, sans-serif;
+    margin: 20px;
+    display: grid;
+    grid-template-areas: 
+        "sidebar topbar"
+        "sidebar main"
+        "bottonbar bottonbar";
+    grid-template-rows:101px ;
+ 
+}
+
+.topbar{
+    box-sizing: border-box;
+    grid-area: topbar;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    height: 86px;
+    width: 952px; 
+    border-radius: 20px;
+    background-color: #302F3D;
+
+}
+
+#my-projects p:nth-of-type(1){
+ padding: 10px;
+ font-size: 20px;
+  font-weight: bold;
+}
+
+#my-projects p:nth-of-type(2){
+    padding: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#my-projects{
+    margin: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#profile-user, #data-user, #technologies, #experiences, #education{
+      background-color: #302F3D;
+      width: 340px;
+      border-radius: 30px;
+      margin-bottom: 15px;
+}
+
+#profile-user{    
+    text-align: center;
+    height: 292px;
+}
+
+#image-profile{
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid ;
+    border-color: #00FF00;
+    height: 128px;
+    width: 128px;  
+}
+
+#user-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#professional-name{
+    font-size: 13px;
+    font-weight: bold;
+}
+  
+#data-user{
+    display:flex;
+    height: 348px;
+}
+
+#data-user ul{
+    list-style: none;
+    list-style-position: inside;
+}
+
+#data-user img{
+    margin: 20px 15px 15px 5px;
+}
+
+#data-user a:any-link{
+    margin-top: 23px;
+    position: absolute;
+    text-decoration: none;
+    color: #837E9F;
+}
+
+#technologies{
+    height: 208px;
+}
+
+#title{
+    font-size: 20px;
+    font-weight: bold;
+    color:#837E9F;
+    margin: 0;
+    padding: 20px 0px 10px 20px;
+    text-align: left;  
+}
+
+.tech{ 
+    display: inline-block;   
+    margin:5px 5px 5px 15px;
+    width: 86px;
+    height:24px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius:30px;
+    background-color: #CB92B1;
+    color: black;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+#experiences{
+    height: 389px;
+}
+
+#experience li{
+    margin-left: 20px;
+}
+
+#experience p:nth-child(1) {
+    font-size:14px;
+    font-weight: bold;
+    margin:0px 0px 3px 0px;
+    
+}
+
+#experience p:nth-child(2) {
+    font-size:12px;
+    margin:0px 0px 3px 0px;
+}
+
+#experience p:nth-child(3) {
+    font-size:12px;
+    margin:0px 0px 20px 0px;
+}
+
+#education{
+  
+    height: 352px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+ 
+}
+
+main{
+    text-align: center;
+    grid-area: main;
+    align-items: center;
+}
+
+#git-informations{
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: space-around;   
+}
+
+#git-informations1 , #git-informations2{ 
+    height: 186px;
+    width: 461px; 
+    border-radius: 20px;
+    background-color: #302F3D;
+}
+
+.informations{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+}
+
+#project-information{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;    
+   
+}
+
+#text-center{
+    margin: auto;
+    text-align: center;
+}
+
+#git-icons{
+    display: flex;
+    width: 150px;
+    height: 55px;
+    margin-top: 30px;
+    margin-left: 15px;
+    /* justify-content: space-evenly;  */
+}
+
+#dev-language{
+    margin-top: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-end; 
+
+}
+
+#icon-language{
+    border-radius: 50%;
+    margin: 18.5px 10px;
+    text-align: right; 
+}
+
+#recent-posts{
+    margin: 15px;
+    box-sizing: border-box;
+    height: 85px;
+    width: 952px; 
+    border-radius: 20px;
+    background-color: #302F3D;
+    text-align: left;
+    font-size:20px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#posts{
+    display:flex;
+    align-items: space-between;
+    margin: 15px;
+    box-sizing: border-box;
+    height: 201px;
+    width: 952px; 
+    border-radius: 20px;
+    background-color: #302F3D;
+    
+
+}
+
+#image-post{
+    
+    padding: 30px;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;  
+}
+
+#text-post{
+
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+#text-post p:nth-of-type(1){
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#text-post p:nth-of-type(2){
+    text-align: left;
+    font-size: 15px;  
+}
+
+#text-post p:nth-of-type(3){
+    text-align: left;
+    font-size: 16px;
+    font-weight: regular;
+}
+#text-post p:nth-of-type(4){
+    text-align: left;
+    font-size: 14px;
+    font-weight: regular;
+}
+
+.bottonbar {
+    margin:0px;
+    font-size: 15px;
+    grid-area: bottonbar;
+    text-align: center;
+}
+
+.bottonbar p {
+    margin:0px;
+}
